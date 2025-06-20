@@ -73,19 +73,25 @@
       background-color: #005fa3;
     }
 
-    @media (max-width: 600px) {
-  .container {
-    padding: 10px;
-  }
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: table;
+        width: 100%;
+      }
 
-  table {
-    font-size: 14px;
-  }
+      table {
+        overflow-x: auto;
+      }
 
-  th, td {
-    padding: 10px;
-  }
-}
+      .container {
+        padding: 10px;
+      }
+
+      th, td {
+        font-size: 14px;
+        padding: 10px 6px;
+      }
+    }
   </style>
 </head>
 <body>
